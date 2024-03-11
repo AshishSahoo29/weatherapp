@@ -23,7 +23,7 @@ public class WeatherController {
 
 	    @GetMapping("/weather")
 	    public String showWeatherForm() {
-	        return "form"; // Assuming you have a Thymeleaf template named "weatherForm.html"
+	        return "form"; 
 	    }
 
 	    @PostMapping("/weather")
@@ -37,7 +37,7 @@ public class WeatherController {
 	        model.addAttribute("temperature", weatherResponse.getMain().getTemp());
 	        // Add more attributes as needed
 
-	        return "display"; // Assuming you have a Thymeleaf template named "weather.html"
+	        return "display"; 
 	    }
 }
 
